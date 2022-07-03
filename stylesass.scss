@@ -1,0 +1,102 @@
+$colorBlack:#000;
+$colorGray:#616161;
+$colorLight:#f1f1f1;
+$colorBlue:#3f51b5;
+$colorbody:#607d8b;
+$colorw:#fff;
+@mixin header {
+    background-color: $colorBlack;
+    color: $colorw;
+}
+
+@mixin indilog {
+    background-color: $colorBlue;
+    color: $colorw;
+}
+
+@mixin headandfoot {
+    background-color: $colorbody;
+    color: $colorw;
+    padding: 2% .5%;
+}
+
+@mixin borders {
+    border: 2px solid $colorLight;
+}
+
+@mixin flex($dir:column, $justify-content:center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify-content;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+.hello {
+    @include flex;
+    @include header;
+    button {
+        background-color: $colorGray;
+        color: $colorw;
+        width: 10vw;
+        padding: 2%;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+}
+
+.weknow {
+    @include flex(row);
+    background-color: $colorLight;
+    padding: 4%;
+    img {
+        width: 30vw;
+        align-self: center;
+    }
+    button {
+        @include header;
+        width: 10vw;
+        padding: 2% 0;
+        font-weight: bold;
+    }
+}
+
+.section_two {
+    text-transform: capitalize;
+    .aside {
+        padding: 1%.5%;
+    }
+    .he_fo {
+        @include headandfoot;
+    }
+}
+
+.add {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section_three {
+    @include flex(row, space-around);
+    h2,
+    h3,
+    p {
+        padding-left: 20px;
+    }
+    .cart_start {
+        margin: 0 2%;
+        .hefo_start {
+            @include indilog;
+        }
+    }
+    .cart_end {
+        .hefo_end {
+            @include header;
+        }
+    }
+    .cart_end,
+    .cart_start {
+        @include borders;
+    }
+}

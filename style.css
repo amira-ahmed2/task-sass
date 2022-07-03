@@ -1,0 +1,88 @@
+.hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+}
+.hello button {
+  background-color: #616161;
+  color: #fff;
+  width: 10vw;
+  padding: 2%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.weknow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  background-color: #f1f1f1;
+  padding: 4%;
+}
+.weknow img {
+  width: 30vw;
+  align-self: center;
+}
+.weknow button {
+  background-color: #000;
+  color: #fff;
+  width: 10vw;
+  padding: 2% 0;
+  font-weight: bold;
+}
+
+.section_two {
+  text-transform: capitalize;
+}
+.section_two .aside {
+  padding: 1% 0.5%;
+}
+.section_two .he_fo {
+  background-color: #607d8b;
+  color: #fff;
+  padding: 2% 0.5%;
+}
+
+.add {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section_three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+}
+.section_three h2,
+.section_three h3,
+.section_three p {
+  padding-left: 20px;
+}
+.section_three .cart_start {
+  margin: 0 2%;
+}
+.section_three .cart_start .hefo_start {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.section_three .cart_end .hefo_end {
+  background-color: #000;
+  color: #fff;
+}
+.section_three .cart_end,
+.section_three .cart_start {
+  border: 2px solid #f1f1f1;
+}
+
+/*# sourceMappingURL=style.css.map */
